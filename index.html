@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HiGaurav | MERN STACK Developer | GCodes </title>
+    <!-- for favicon for website and attaching xml file for search engine optimization -->
+    <link rel="sitemap" type="application/xml" href="sitemap.xml">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon_io/favicon.ico">
+    
+    <!-- For website icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+
+    <!-- meta tag for seo -->
+    <meta name="description" content="A MERN STACK Web Developer building the Frontend & Backend of Websites and Web Applications that leads to the success of the overall product ">
+    <meta name="author" content="HiGaurav">
+    <meta property="og:title" content="HiGaurav | GCodes | MERN STACK Developer">
+    <meta property="og:site_name" content="Gaurav  Portfolio Website">
+    <meta property="og:url" content="https://www.higaurav.com/">
+    <meta property="og:description" content="A MERN STACK Web Developer building the Frontend & Backend of Websites and Web Applications that leads to the success of the overall product">
+    <meta property="og:type" content="website">
+
+    
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="css.css">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- js animaiton -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <style>
+        .hidden {
+          display: none;
+        }
+      </style>
+
+</head>
+<body>
+    <header data-aos="fade-down">
+        <nav class="header_container">
+            <!-- brand -->
+            <div class="brand_info" data-aos="fade-right" data-aos-duration="1500" >
+                <a href="#" id="nav-brand" >Gaurav</a>
+            </div>
+            <!-- navigation menu -->
+            <div class="brand_navigation" >
+                <img src="./assets/icon/bar.svg" alt="menu_icon" id="menuicon">
+                <ul class="nav">
+                    <li class="nav-item"><a href="#" class="nav-link" id="goHome">Home</a></li>
+                    <li class="nav-item"><a href="#project" class="nav-link" id="goProject">Projects</a></li>                    
+                    <li class="nav-item"><a href="#aboutme" class="nav-link" id="goAbout">About</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link" id="goContact" >Contact</a></li>
+                </ul>
+
+              
+            </div>
+           
+        </nav>
+        <ul class="mobnav" id="showme" >
+                <hr id="menubar">
+            <li class="nav-item"><a href="#" class="nav-link" id="goHome" onclick="hideMobileMenu()">Home</a></li>
+            <li class="nav-item"><a href="#project" class="nav-link" id="goProject" onclick="hideMobileMenu()">Projects</a></li>                    
+            <li class="nav-item"><a href="#aboutme" class="nav-link" id="goAbout" onclick="hideMobileMenu()">About</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link" id="goContact" onclick="hideMobileMenu()" >Contact</a></li>
+        </ul>
+    </header>
+    
+    <main>
+        <section class="hero" id="home">
+        <div class="hero_background">
+            <div class="overlay">
+                <div class="hero_container" data-aos="zoom-in">
+                   <div>
+                    <h1>HEY, I’M GAURAV</h1>
+                    <p>A MERN STACK Web Developer building the Frontend & Backend  of Websites and 
+                        Web Applications that leads to the success of the overall product </p>
+                  
+                    <button  id="homeProject">Projects</button><br/>
+                    <!-- <button id="darkMode">Dark Mode</button> -->
+                    <span style="color:red">* Website Under maintenance</span>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Projects -->
+
+    <section class="project" id="project" data-aos="fade-right">
+        <div class="project_header"  >
+        
+                <h2>PROJECTS</h2>
+                <h6>Here you will find some of the personal and clients projects that I created with each project containing its own case study</h6>
+            
+           
+         </div>
+    </section>
+
+    <section class="projects background1">
+      
+       
+        <div class="projects_container" id="higaurav">
+            
+            <div data-aos="fade-left" id="previous">
+                <img src="./assets/projects_img/portFolio.png" alt="proj_img" id="pro_img">
+            </div>
+
+            <div class="projects_details"  data-aos="fade-right">
+                <h4> MY PORTFOLIO</h4>
+                <p>My portfolio represents the culmination of my experiences and skills as a MERN Stack Developer. Through this platform, I invite you to explore my projects, delve into my technical expertise, and witness my passion for creating exceptional web applications. </p>
+        
+                <button id="caseStudyKhalsa" onclick="displayhigaurav()">CASE STUDY</button>
+                <button><a href="https://www.figma.com/file/Ta6EuQ0T89Hjv40niwIL06/PortFolio?type=design&node-id=0-1" target="_blank">FIGMA DESIGN</a></button>
+               
+            </div>
+
+        </div>
+        
+
+    </section>
+
+    <section class="projects background2">
+      
+       
+        <div class="projects_container" id="khalsaCheritable">
+            
+            <div data-aos="fade-left" id="previous">
+                <img src="./assets/projects_img/khalsa.webp" alt="proj_img" id="pro_img">
+            </div>
+
+            <div class="projects_details"  data-aos="fade-right">
+                <h4>KHALSA JI CHERITABLE TRUST</h4>
+                <p>The Khalsa Ji Charitable Trust is a non-profit organization based in India that provides support to underprivileged communities through education, healthcare, and other essential services.</p>
+        
+                <button id="caseStudyKhalsa" onclick="displayKhalsa()">CASE STUDY</button>
+                <button title="Client has changed entire website that's why it's not availe right now" style="background-color: rgb(138, 138, 138)"><a  target="_blank" id="liveLink"  disabled ><strike>Live Preview</strike></a></button>
+                
+            </div>
+
+        </div>
+        
+
+    </section>
+
+    <section class="projects background1" >
+
+        <div class="projects_container">
+
+            <div  data-aos="fade-left">
+                <img src="./assets/projects_img/MedDoc.png" alt="proj_img" id="pro_img">
+            </div>
+
+            <div class="projects_details"  data-aos="fade-right">
+                <h4>EasyVisit (In Process)</h4>
+                <p> EasyVisit streamlines medical appointment scheduling and management. Patients can easily book appointments, access records, and communicate with providers. The app sends reminders, allows for cancellations, and provides directions to the clinic. It's convenient, secure, and confidential.</p>
+                <button disabled>UNDER PROCESS</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="projects background2" >
+
+        <div class="projects_container"  id="translator">
+
+            <div  data-aos="fade-left">
+                <img src="./assets/projects_img/translator.webp" alt="proj_img" id="pro_img">
+            </div>
+
+            <div class="projects_details"  data-aos="fade-right">
+                <h4>DOC TRNALSATOR</h4>
+                <p>This web application allows users to upload documents in various languages and translate them into their desired target language. With this document translator, users can easily convert documents between different languages.</p>
+                <button onclick="displayTranslator()">CASE STUDY</button>
+                <button ><a href="https://github.com/githigaurav/translator" target="_blank">GIT REPO</a></button>
+            </div>
+
+        </div>
+    </section>
+
+<!-- for rent square -->
+    <section class="projects background1">
+
+        <div class="projects_container">
+
+            <div  data-aos="fade-left">
+                <img src="./assets/projects_img/RentSquare.webp" alt="proj_img" id="pro_img">
+            </div>
+
+            <div class="projects_details"  data-aos="fade-right">
+                <h4>Rent Square</h4>
+                <p>Rent Square: Your go-to for renting, buying, and selling rooms, apartments, and flats. Find your perfect living space effortlessly with our user-friendly platform. Trust Rent Square to connect you with landlords, tenants, buyers, and sellers. Discover your dream home now.</p>
+                <button disabled>COMING SOON</button>
+            </div>
+
+        </div>
+    </section>
+
+    
+    <section class="project" id="aboutme">
+        <div class="project_header" data-aos="fade-left">
+        
+                <h2>ABOUT ME</h2>
+                <h6>Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</h6>
+            
+           
+         </div>
+    </section>
+    <section class="skills">
+        <div class="skills_container">
+            <div class="skills_wrapper">
+                <div class="knowme"  data-aos="fade-right">
+                    
+                    <h4>Get to know me!</h4>
+                    <hr class="line">
+                    <p>I'm a Mern Stack Web Developer building the Front-end & Back-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section. I also like sharing content related to the stuff that I have learned over the years in Web Development so it can help other people of the Dev Community. Feel free to Connect or Follow me on my Linkedin where I post useful content related to Web Development and Programming I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</p>
+                    <button id="ctaContact">CONTACT</button>
+                </div>
+                <div class="Edu" data-aos="fade-left">
+                    <h4>Skills</h4>
+                    <hr class="line">
+                   <div class="mern"  >
+                    <div class="fontend">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JAVASCRIPT</li>
+                            <li>BOOTSTRAP</li>
+    
+                        </ul>
+                    </div>
+                    <div class="backend">
+                        <ul>
+                            <li>NODE JS</li>
+                            <li>EXPRESS JS</li>
+                            <li>MONGO DB</li>
+                            <li>GIT</li>
+                        </ul>
+                    </div>
+                   </div>
+                   <div class="Edu" data-aos="fade-left" style="margin-left: 0; margin-top:1rem;">
+                    <h4>Tools</h4>
+                    <hr class="line">
+                   <div class="mern"  >
+                    <div class="fontend">
+                        <ul>
+                            <li>Figma</li>
+                            <li>illustrator</li>
+                        
+                           
+    
+                        </ul>
+                    </div>
+                    <div class="backend">
+                        <ul>
+                            <li>Adobe XD</li>
+                            <li>Photoshop</li>
+                           
+                            
+                        </ul>
+                    </div>
+                   </div>
+                </div>
+                </div>
+
+
+               
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="project" id="contact">
+        <div class="project_header" data-aos="fade-right">
+        
+                <h2>CONTACT</h2>
+                <h6>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</h6>
+            
+           
+         </div>
+    </section>
+
+    <section class="conatact">
+        <div class="form_container" data-aos="zoom-in">
+            <img src="./assets/loading.gif" alt="" id="formLoading">
+            <div class="project_header" id="emailSent">
+                <h6>Email has been sent successfully</h6>
+            </div>
+            <div class="form_data">
+                
+                <form  id="form_data" enctype="multipart/form-data">
+                    <div class="form_group">
+                        <label for="name">Name</label><br/>
+                        <input type="text" placeholder="Your Name" id="name">
+                        <span id="nameerr"></span>
+                    </div>
+
+                    <div class="form_group">
+                        <label for="email">Email</label><br/>
+                        <input type="text" placeholder="Your Email" id="email" >
+                        <span id="emailerr"></span>
+                    </div>
+
+                    <div class="form_group">
+                        <label for="textarea">Message</label><br/>
+                       <textarea name="textarea" id="textarea" cols="50" rows="10" placeholder="Your Message"  ></textarea>
+                       <span id="msgerr"></span>
+                    </div>
+                    <div class="form_group">
+                        <button id="submit" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+                
+        </div>
+    </section>
+    </main>
+    <footer>
+        <div class="footer_container" data-aos="fade-right">
+           <p>Copyright &#169; higaurav.com</p>
+            <hr class="divider">
+        </div>
+        
+       
+    </footer>
+    
+    <script src="js.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    
+<script src="collapse.js"></script>
+<script src="darkMode.js"></script>
+
+</body> 
+</html>
